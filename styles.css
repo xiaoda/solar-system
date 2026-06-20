@@ -90,6 +90,10 @@ body {
   line-height: 1.25;
 }
 
+.back-solar {
+  top: calc(50% - 176px);
+}
+
 .back:hover,
 .back:focus {
   color: #fff;
