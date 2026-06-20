@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>太阳系</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="screen" aria-label="太阳系信息图首页">
+    <img class="full-image" src="images/solar-systems.png" alt="太阳系全览信息图" />
+
+    <!--
+      跳转方式：在首页图片上给各个天体位置覆盖透明热点链接。
+      SVG 的 viewBox 与原图尺寸一致（1672x941），所以无论屏幕如何缩放，热点都会跟着图片等比例对齐。
+    -->
+    <svg class="hotspots" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMid meet" aria-hidden="false">
+      <a href="pages/sun.html" aria-label="查看太阳页面">
+        <circle class="hotspot-circle" cx="70" cy="226" r="140" />
+      </a>
+      <a href="pages/mercury.html" aria-label="查看水星页面">
+        <circle class="hotspot-circle" cx="274" cy="228" r="34" />
+      </a>
+      <a href="pages/venus.html" aria-label="查看金星页面">
+        <circle class="hotspot-circle" cx="356" cy="229" r="40" />
+      </a>
+      <a href="pages/earth.html" aria-label="查看地球页面">
+        <circle class="hotspot-circle" cx="429" cy="229" r="42" />
+      </a>
+      <a href="pages/mars.html" aria-label="查看火星页面">
+        <circle class="hotspot-circle" cx="508" cy="229" r="42" />
+      </a>
+      <a href="pages/asteroid-belt.html" aria-label="查看小行星带页面">
+        <circle class="hotspot-circle" cx="606" cy="235" r="62" />
+      </a>
+    </svg>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
