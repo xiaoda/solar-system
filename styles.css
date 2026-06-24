@@ -52,8 +52,17 @@ body {
   transition: fill 0.2s ease, stroke 0.2s ease;
 }
 
+.hotspot-rect {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 4;
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
 .hotspots a:hover .hotspot-circle,
-.hotspots a:focus .hotspot-circle {
+.hotspots a:focus .hotspot-circle,
+.hotspots a:hover .hotspot-rect,
+.hotspots a:focus .hotspot-rect {
   fill: rgba(255, 128, 54, 0.2);
   stroke: rgba(255, 180, 88, 0.9);
 }
@@ -90,15 +99,10 @@ body {
   line-height: 1.25;
 }
 
-.back-solar {
-  top: calc(50% - 176px);
-}
-
 .back:hover,
 .back:focus {
   color: #fff;
   background: rgba(255, 128, 54, 0.28);
   outline: none;
 }
-
 
